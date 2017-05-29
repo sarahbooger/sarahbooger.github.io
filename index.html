@@ -1,7 +1,53 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hellow World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app-6">
+<h1>Site-Wide Elements</h1>
+  <input v-model="input1">
+  <input v-model="input2">
+  <input v-model="input3">
+  <input v-model="input4">
+<h1>Banner Elements</h1>  <input v-model="input5">
+  <input v-model="input6">
+  <input v-model="input7">
+  <input v-model="input8">
+  <input v-model="input9">
+<h1>Header Elements<h1>  <input v-model="input10">
+  <input v-model="input11">
+  <input v-model="input12">
+  <input v-model="input13">
+<h1>Category Elements</h1>  <input v-model="input14">
+  <input v-model="input15">
+  <input v-model="input16">
+  <input v-model="input17">
+  <p><div class="skin"><code>&lt;style>#content {background:url(<b>{{ input1 }}</b>) repeat #<b>{{ input2 }}</b>;} a:link, a:visited, h1 {color: #<b>{{ input3 }}</b>;}a:hover, a:active {color: #<b>{{ input4 }}</b>;}#logo{height:<b>{{ input5 }}</b>px;}.regular {background-image:url(<b>{{ input6 }}</b>);background-color:#<b>{{ input7 }}</b>;background-position: top center;min-height:<b>{{ input5 }}</b>px;}.blurred {background-image:url(<b>{{ input8 }}</b>);background-color:#<b>{{ input9 }}</b>;background-position: top center;min-height:<b>{{ input5 }}</b>px;}.thead {background: #<b>{{ input10 }}</b>; color: #<b>{{ input11 }}</b>;}.thead a:link, .thead a:visited  {color: #<b>{{ input12 }}</b>;}.thead a:hover, .thead a:active {color: #<b>{{ input13 }}</b>;}.tcat {background: #<b>{{ input14 }}</b>; color: #<b>{{ input15 }}</b>;}.tcat a:link, .tcat a:visited {color: #<b>{{ input16 }}</b>;}.tcat a:hover, .tcat a:active {color: #<b>{{ input17 }}</b>;}&lt;/style&gt;</code></div></p>
+</div>
+
+<script>
+var app6 = new Vue({
+  el: '#app-6',
+  data: {
+    input1: 'site background image',
+    input2: 'color behind site bg',
+    input3: 'link colors',
+    input4: 'hover colors',
+    input5: 'banner height',
+    input6: 'regular bg image',
+    input7: 'color behind bg image',
+    input8: 'blurred bg image',
+    input9: 'color behind blurred bg image',
+    input10: 'header color',
+    input11: 'header font color',
+    input12: 'header link color',
+    input13: 'header link hover color',
+    input14: 'category color',
+    input15: 'category font color',
+    input16: 'category link color',
+    input17: 'category link hover color',
+  }
+})
+</script>
+
+<style>
+div.skin { background-color: #e2e2e2; color: #ed366a; font-family: courier new; width: 90%; margin: 0px auto; line-height 3; padding: 10px;}
+#app-6 {width: 50%; margin: 0px auto; font-family: helvetica;}
+</style>
